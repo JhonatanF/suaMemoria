@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Memoria</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" type="text/css" href="../css/quizymemorygameEasy.css" />
+    
+</head>
+<body>
+        <header class="page-top">
+            <div class="back">
+                <a href="../pages/init.html">
+                    <img src="../assets/return.png" alt="Voltar">
+                </a>
+            </div>
+            <div class="img-title">
+                <img src="../assets/Novo Projeto.png" alt="Logo Brain">
+            </div>
+            <div class="text-title">
+                <h1>Sua Memória</h1>
+            </div>
+        </header>
+        <div class="addMargin">
+
+    <div id="my-memorygame" class="quizy-memorygame">
+            <ul id="listCards">
+                <li class="match1">
+                    <p>Sao Paulo</p>
+                </li>
+                <li class="match1">
+                    <p>Sao Paulo</p>
+                </li>
+                <li class="match2">
+                    Caruaru
+                </li>
+                <li class="match2">
+                    Caruaru
+                </li>
+                <li class="match3">
+                    Rio de Janeiro
+                </li>
+                <li class="match3">
+                    Rio de Janeiro
+                </li>
+                <li class="match4">
+                    Recife
+                </li>
+                <li class="match4">
+                    Recife
+                </li>
+                <li class="match5">
+                    Salvador
+                </li>
+                <li class="match5">
+                    Salvador
+                </li>
+                <li class="match6">
+                    Maceio
+                </li>
+                <li class="match6">
+                    Maceio
+                </li>
+            </ul>
+        </div>
+        </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+    <script src="../js/jquery.flip.min.js"></script>
+    <script src="../js/jquery.quizymemorygame.js"></script>
+    <script>
+    $('#my-memorygame').quizyMemoryGame({itemWidth: 156, itemHeight: 156, itemsMargin:20, colCount:6, animType:'flip' , flipAnim:'tb', animSpeed:150, resultIcons:true});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-top {
+
+    width: 100%vw;
+    height: 200px;
+    background-color: #028088; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.back img {
+    width: 50px;
+    height: 50px;
+}
+
+.page.top .img-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    
+}
+
+.page-top .img-title img {
+    filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+.page-top .text-title {
+    color: #FFF;
+    display: flex;
+
+    font-size: 1.8em;
+    align-items: center;
+    filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+main {
+    margin-top: 30px;
+}
+
+.subtitle-page {
+    width: 100%vw;
+    background-color: #C8C8C8;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle-page p {
+    font-size: 1.5em;
+    color: #028088;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    /* margin-left: 100px; */
+}
+
+.menu-mod {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu-mod a {
+    text-decoration: none;
+
+    width: 330px;
+    height: 50px;
+    background-color:#028088;
+    border: none;
+    border-radius: 8px;
+    margin-top: 40px;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFF;
+    font-size: 1em;
+
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu-mod a:hover {
+    background-color:#006269;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.50);
+}
+
+.help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: #C8C8C8; */
+    margin-top: 50px;
+/*     
+    height: 400px;
+    width: 400px; */
+
+}
+
+.help .response {
+    display: block;
+}
+
+.options {
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#exit {
+    color: black;
+    margin-left: 800px;
+}

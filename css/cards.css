@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-top {
+
+    width: 100%vw;
+    height: 200px;
+    background-color: #028088; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.back img {
+    width: 50px;
+    height: 50px;
+}
+
+.page.top .img-title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.page-top .img-title img {
+    filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+.page-top .text-title {
+    color: #FFF;
+    display: flex;
+
+    font-size: 1.8em;
+    align-items: center;
+    filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+main {
+    margin-top: 30px;
+}
+
+.options {
+    display: flex;
+    width: 100vw;
+    margin-left: 200px;
+    margin-bottom: 25px;
+}
+
+.subtitle-page {
+    width: 100vw;
+    background-color: #C8C8C8;
+    height: 50px;
+
+    display: flex;
+}
+
+.subtitle-page p {
+    font-size: 1.5em;
+    color: #028088;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.subtitle-page #tempo {
+    flex: 1;
+}
+
+.subtitle-page .time {
+    display: flex;
+    flex: 1;
+}
+
+.subtitle-page .play {
+    display: flex;
+    flex: 1;
+}
+
+.subtitle-page .exit {
+    display: flex;
+    flex: 1;
+}
+
+.subtitle-page  a{
+    text-decoration: none;
+    color: rgb(182, 4, 4) ;
+}
+
+.subtitle-page a:hover {
+    color:#006269;
+}
+
+.voltaBack,
+.voltaFront {
+    position: absolute;
+}
+
+.card {
+	height: 120px;
+	width: 120px;
+	justify-content: space-evenly;
+	align-content: stretch;
+	margin: 5px 5px;
+	border-radius: 25px;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transform-origin: center right;
+	transition: transform 1s;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.card {
+    position: relative;
+    display: flex;
+}
+
+.voltaFront:active,
+.voltaBack:active,
+.card:active {
+    transform: scale(0.97);
+}
+
+.card .voltaFront img{
+	background-size: cover;
+	border-radius: 15px;
+    width: 120px;
+    height: 120px;
+    filter: grayscale(0.8);
+}
+
+.card .voltaBack{
+	border-radius: 10px;
+    width: 80px;
+    height: 80px;
+
+}
+
+.card .voltaBack img {
+    width: 100%;
+    height: 100%;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.voltaFront.flip {
+	transform: translateX(-100%) rotateY(-180deg); 
+    /* transform: rotateY(180deg); */
+    transition: 2s;
+    display: none;
+}
+
+#tempo {
+    font-size: 1.3rem;
+}
